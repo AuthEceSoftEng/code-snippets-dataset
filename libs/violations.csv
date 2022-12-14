@@ -1,0 +1,229 @@
+WarningCritical;category
+WarningMajor;category
+WarningMinor;category
+Best Practice Rules;category
+Code Style Rules;category
+Design Rules;category
+Documentation Rules;category
+Error Prone Rules;category
+Multithreading Rules;category
+Performance Rules;category
+Security Rules;category
+PMD_ACWAM;Abstract Class Without Abstract Method;Best Practice Rules;Minor
+PMD_AMG;Accessor Method Generation;Best Practice Rules;Minor
+PMD_AISD;Array Is Stored Directly;Best Practice Rules;Major
+PMD_AMDF;Avoid Message Digest Field;Best Practice Rules;Major
+PMD_APST;Avoid Print Stack Trace;Best Practice Rules;Major
+PMD_ARCV;Avoid Reassigning Catch Variables;Best Practice Rules;Minor
+PMD_ARLV;Avoid Reassigning Loop Variables;Best Practice Rules;Minor
+PMD_ARP;Avoid Reassigning Parameters;Best Practice Rules;Minor
+PMD_ASBF;Avoid String Buffer Field;Best Practice Rules;Minor
+PMD_AUHCIP;Avoid Using Hard Coded IP;Best Practice Rules;Major
+PMD_CRS;Check Result Set;Best Practice Rules;Critical
+PMD_CII;Constants In Interface;Best Practice Rules;Minor
+PMD_DLNLISS;Default Label Not Last In Switch Stmt;Best Practice Rules;Minor
+PMD_DBI;Double Brace Initialization;Best Practice Rules;Minor
+PMD_FLCBF;For Loop Can Be Foreach;Best Practice Rules;Minor
+PMD_FLVC;For Loop Variable Count;Best Practice Rules;Minor
+PMD_GLS;Guard Log Statement;Best Practice Rules;Minor
+PMD_JUASIM;JUnit Assertions Should Include Message;Best Practice Rules;Minor
+PMD_JUTCTMA;JUnit Test Contains Too Many Asserts;Best Practice Rules;Minor
+PMD_JUTSIA;JUnit Tests Should Include Assert;Best Practice Rules;Major
+PMD_LFIC;Literals First In Comparisons;Best Practice Rules;Critical
+PMD_LoC;Loose Coupling;Best Practice Rules;Major
+PMD_MRIA;Method Returns Internal Array;Best Practice Rules;Major
+PMD_MO;Missing Override;Best Practice Rules;Minor
+PMD_ODPL;One Declaration Per Line;Best Practice Rules;Minor
+PMD_PST;Preserve Stack Trace;Best Practice Rules;Major
+PMD_SSSHD;Switch Stmts Should Have Default;Best Practice Rules;Major
+PMD_SP;System Println;Best Practice Rules;Major
+PMD_UA;Unused Assignment;Best Practice Rules;Minor
+PMD_UnI;Unused Imports;Best Practice Rules;Minor
+PMD_ULV;Unused Local Variable;Best Practice Rules;Major
+PMD_UPF;Unused Private Field;Best Practice Rules;Major
+PMD_UPM;Unused Private Method;Best Practice Rules;Major
+PMD_UAEIOAT;Use Assert Equals Instead Of Assert True;Best Practice Rules;Major
+PMD_UANIOAT;Use Assert Null Instead Of Assert True;Best Practice Rules;Minor
+PMD_UASIOAT;Use Assert Same Instead Of Assert True;Best Practice Rules;Minor
+PMD_UATIOAE;Use Assert True Instead Of Assert Equals;Best Practice Rules;Minor
+PMD_UCIE;Use Collection Is Empty;Best Practice Rules;Major
+PMD_UTWR;Use Try With Resources;Best Practice Rules;Minor
+PMD_UV;Use Varargs;Best Practice Rules;Minor
+PMD_WLWLB;While Loop With Literal Boolean;Best Practice Rules;Minor
+PMD_ADS;Avoid Dollar Signs;Code Style Rules;Minor
+PMD_APMP;Avoid Prefixing Method Parameters;Code Style Rules;Minor
+PMD_APFIFC;Avoid Protected Field In Final Class;Code Style Rules;Minor
+PMD_APMIFCNE;Avoid Protected Method In Final Class Not Extending;Code Style Rules;Minor
+PMD_AUNC;Avoid Using Native Code;Code Style Rules;Major
+PMD_BGMN;Boolean Get Method Name;Code Style Rules;Minor
+PMD_CSB;Control Statement Braces;Code Style Rules;Minor
+PMD_DP;Default Package;Code Style Rules;Minor
+PMD_DIJL;Dont Import Java Lang;Code Style Rules;Minor
+PMD_DI;Duplicate Imports;Code Style Rules;Minor
+PMD_EMIACSBA;Empty Method In Abstract Class Should Be Abstract;Code Style Rules;Major
+PMD_EO;Extends Object;Code Style Rules;Minor
+PMD_FDSBASOC;Field Declarations Should Be At Start Of Class;Code Style Rules;Minor
+PMD_FLSBWL;For Loop Should Be While Loop;Code Style Rules;Minor
+PMD_GN;Generics Naming;Code Style Rules;Minor
+PMD_ICB;Identical Catch Branches;Code Style Rules;Minor
+PMD_LHNC;Local Home Naming Convention;Code Style Rules;Major
+PMD_LISNC;Local Interface Session Naming Convention;Code Style Rules;Major
+PMD_MDBASBNC;MDBAnd Session Bean Naming Convention;Code Style Rules;Major
+PMD_NP;No Package;Code Style Rules;Minor
+PMD_PC;Package Case;Code Style Rules;Minor
+PMD_RINC;Remote Interface Naming Convention;Code Style Rules;Major
+PMD_RSINC;Remote Session Interface Naming Convention;Code Style Rules;Major
+PMD_SCN;Short Class Name;Code Style Rules;Minor
+PMD_SMN;Short Method Name;Code Style Rules;Minor
+PMD_SCFN;Suspicious Constant Field Name;Code Style Rules;Minor
+PMD_TMSI;Too Many Static Imports;Code Style Rules;Major
+PMD_UAVE;Unnecessary Annotation Value Element;Code Style Rules;Minor
+PMD_UnC;Unnecessary Cast;Code Style Rules;Minor
+PMD_UC;Unnecessary Constructor;Code Style Rules;Minor
+PMD_UFQN;Unnecessary Fully Qualified Name;Code Style Rules;Minor
+PMD_ULBR;Unnecessary Local Before Return;Code Style Rules;Minor
+PMD_UnM;Unnecessary Modifier;Code Style Rules;Minor
+PMD_UDO;Use Diamond Operator;Code Style Rules;Minor
+PMD_USAI;Use Short Array Initializer;Code Style Rules;Minor
+PMD_UUINL;Use Underscores In Numeric Literals;Code Style Rules;Minor
+PMD_UQT;Useless Qualified This;Code Style Rules;Minor
+PMD_AbCWAM;Abstract Class Without Any Method;Design Rules;Minor
+PMD_ACGE;Avoid Catching Generic Exception;Design Rules;Major
+PMD_ARE;Avoid Rethrowing Exception;Design Rules;Minor
+PMD_ATNIOSE;Avoid Throwing New Instance Of Same Exception;Design Rules;Minor
+PMD_ATNPE;Avoid Throwing Null Pointer Exception;Design Rules;Critical
+PMD_ATRET;Avoid Throwing Raw Exception Types;Design Rules;Major
+PMD_AUEIS;Avoid Unchecked Exceptions In Signatures;Design Rules;Minor
+PMD_CWOPCSBF;Class With Only Private Constructors Should Be Final;Design Rules;Minor
+PMD_CIS;Collapsible If Statements;Design Rules;Minor
+PMD_DC;Data Class;Design Rules;Minor
+PMD_DNEJLE;Do Not Extend Java Lang Error;Design Rules;Critical
+PMD_EAFC;Exception As Flow Control;Design Rules;Major
+PMD_FFCBS;Final Field Could Be Static;Design Rules;Minor
+PMD_IF;Immutable Field;Design Rules;Minor
+PMD_LI;Logic Inversion;Design Rules;Minor
+PMD_SiDTE;Signature Declare Throws Exception;Design Rules;Major
+PMD_ST;Simplified Ternary;Design Rules;Minor
+PMD_SBA;Simplify Boolean Assertion;Design Rules;Minor
+PMD_SBE;Simplify Boolean Expressions;Design Rules;Minor
+PMD_SBR;Simplify Boolean Returns;Design Rules;Minor
+PMD_SC;Simplify Conditional;Design Rules;Minor
+PMD_SF;Singular Field;Design Rules;Major
+PMD_UOM;Useless Overriding Method;Design Rules;Minor
+PMD_UEC;Uncommented Empty Constructor;Documentation Rules;Minor
+PMD_UEM;Uncommented Empty Method Body;Documentation Rules;Minor
+PMD_AIO;Assignment In Operand;Error Prone Rules;Minor
+PMD_ATNFS;Assignment To Non Final Static;Error Prone Rules;Critical
+PMD_AAA;Avoid Accessibility Alteration;Error Prone Rules;Major
+PMD_ABSALIL;Avoid Branching Statement As Last In Loop;Error Prone Rules;Major
+PMD_ACF;Avoid Calling Finalize;Error Prone Rules;Major
+PMD_ACNPE;Avoid Catching NPE;Error Prone Rules;Critical
+PMD_ACT;Avoid Catching Throwable;Error Prone Rules;Major
+PMD_ADLIBDC;Avoid Decimal Literals In Big Decimal Constructor;Error Prone Rules;Critical
+PMD_ADL;Avoid Duplicate Literals;Error Prone Rules;Major
+PMD_AFNMMN;Avoid Field Name Matching Method Name;Error Prone Rules;Minor
+PMD_AFNMTN;Avoid Field Name Matching Type Name;Error Prone Rules;Minor
+PMD_AICICC;Avoid Instanceof Checks In Catch Clause;Error Prone Rules;Major
+PMD_ALEI;Avoid Losing Exception Information;Error Prone Rules;Major
+PMD_AMUO;Avoid Multiple Unary Operators;Error Prone Rules;Major
+PMD_AUOV;Avoid Using Octal Values;Error Prone Rules;Critical
+PMD_BC;Bad Comparison;Error Prone Rules;Critical
+PMD_BNC;Broken Null Check;Error Prone Rules;Critical
+PMD_CSR;Check Skip Result;Error Prone Rules;Critical
+PMD_CCEWTA;Class Cast Exception With To Array;Error Prone Rules;Critical
+PMD_CMMBP;Clone Method Must Be Public;Error Prone Rules;Minor
+PMD_ClMMIC;Clone Method Must Implement Cloneable;Error Prone Rules;Major
+PMD_CMRTMMCN;Clone Method Return Type Must Match Class Name;Error Prone Rules;Minor
+PMD_CTCNSE;Clone Throws Clone Not Supported Exception;Error Prone Rules;Major
+PMD_ClR;Close Resource;Error Prone Rules;Critical
+PMD_CCOM;Constructor Calls Overridable Method;Error Prone Rules;Critical
+PMD_DTC;Detached Test Case;Error Prone Rules;Minor
+PMD_DNCGCE;Do Not Call Garbage Collection Explicitly;Error Prone Rules;Major
+PMD_DNEJLT;Do Not Extend Java Lang Throwable;Error Prone Rules;Critical
+PMD_DNTVM;Do Not Terminate VM;Error Prone Rules;Critical
+PMD_DNTEIF;Do Not Throw Exception In Finally;Error Prone Rules;Critical
+PMD_DIS;Dont Import Sun;Error Prone Rules;Major
+PMD_DUFTFLI;Dont Use Float Type For Loop Indices;Error Prone Rules;Critical
+PMD_ECB;Empty Catch Block;Error Prone Rules;Critical
+PMD_EF;Empty Finalizer;Error Prone Rules;Minor
+PMD_EFB;Empty Finally Block;Error Prone Rules;Minor
+PMD_EIS;Empty If Stmt;Error Prone Rules;Major
+PMD_EmSB;Empty Statement Block;Error Prone Rules;Minor
+PMD_ESNIL;Empty Statement Not In Loop;Error Prone Rules;Minor
+PMD_ESS;Empty Switch Statements;Error Prone Rules;Major
+PMD_ESB;Empty Synchronized Block;Error Prone Rules;Major
+PMD_ETB;Empty Try Block;Error Prone Rules;Major
+PMD_EWS;Empty While Stmt;Error Prone Rules;Critical
+PMD_EN;Equals Null;Error Prone Rules;Critical
+PMD_FDNCSF;Finalize Does Not Call Super Finalize;Error Prone Rules;Critical
+PMD_FOCSF;Finalize Only Calls Super Finalize;Error Prone Rules;Minor
+PMD_FO;Finalize Overloaded;Error Prone Rules;Critical
+PMD_FSBP;Finalize Should Be Protected;Error Prone Rules;Critical
+PMD_IO;Idempotent Operations;Error Prone Rules;Major
+PMD_IFSP;Import From Same Package;Error Prone Rules;Minor
+PMD_ITGC;Instantiation To Get Class;Error Prone Rules;Major
+PMD_ILMF;Invalid Log Message Format;Error Prone Rules;Minor
+PMD_JUS;JUnit Spelling;Error Prone Rules;Critical
+PMD_JUSS;JUnit Static Suite;Error Prone Rules;Critical
+PMD_JI;Jumbled Incrementer;Error Prone Rules;Critical
+PMD_LINSF;Logger Is Not Static Final;Error Prone Rules;Minor
+PMD_MWSNAEC;Method With Same Name As Enclosing Class;Error Prone Rules;Minor
+PMD_MNC;Misplaced Null Check;Error Prone Rules;Critical
+PMD_MBIS;Missing Break In Switch;Error Prone Rules;Critical
+PMD_MSVUID;Missing Serial Version UID;Error Prone Rules;Major
+PMD_MSMINIC;Missing Static Method In Non Instantiatable Class;Error Prone Rules;Minor
+PMD_MTOL;More Than One Logger;Error Prone Rules;Major
+PMD_NCLISS;Non Case Label In Switch Statement;Error Prone Rules;Critical
+PMD_NSI;Non Static Initializer;Error Prone Rules;Critical
+PMD_OBEAH;Override Both Equals And Hashcode;Error Prone Rules;Critical
+PMD_PCI;Proper Clone Implementation;Error Prone Rules;Critical
+PMD_PL;Proper Logger;Error Prone Rules;Minor
+PMD_REARTN;Return Empty Array Rather Than Null;Error Prone Rules;Major
+PMD_RFFB;Return From Finally Block;Error Prone Rules;Critical
+PMD_SDFNL;Simple Date Format Needs Locale;Error Prone Rules;Minor
+PMD_SMS;Single Method Singleton;Error Prone Rules;Major
+PMD_SCRNI;Singleton Class Returning New Instance;Error Prone Rules;Major
+PMD_SEJBFSBF;Static EJBField Should Be Final;Error Prone Rules;Critical
+PMD_SBIWC;String Buffer Instantiation With Char;Error Prone Rules;Critical
+PMD_SEMN;Suspicious Equals Method Name;Error Prone Rules;Critical
+PMD_SHMN;Suspicious Hashcode Method Name;Error Prone Rules;Critical
+PMD_SOE;Suspicious Octal Escape;Error Prone Rules;Major
+PMD_TCWTC;Test Class Without Test Cases;Error Prone Rules;Minor
+PMD_UIS;Unconditional If Statement;Error Prone Rules;Major
+PMD_UBA;Unnecessary Boolean Assertion;Error Prone Rules;Minor
+PMD_UCC;Unnecessary Case Change;Error Prone Rules;Minor
+PMD_UCT;Unnecessary Conversion Temporary;Error Prone Rules;Minor
+PMD_UNCIE;Unused Null Check In Equals;Error Prone Rules;Critical
+PMD_UCEL;Use Correct Exception Logging;Error Prone Rules;Major
+PMD_UETCS;Use Equals To Compare Strings;Error Prone Rules;Critical
+PMD_ULWCC;Use Locale With Case Conversions;Error Prone Rules;Critical
+PMD_UOOI;Useless Operation On Immutable;Error Prone Rules;Critical
+PMD_ASAML;Avoid Synchronized At Method Level;Multithreading Rules;Minor
+PMD_ATG;Avoid Thread Group;Multithreading Rules;Critical
+PMD_DCTR;Dont Call Thread Run;Multithreading Rules;Critical
+PMD_DCL;Double Checked Locking;Multithreading Rules;Critical
+PMD_NTSS;Non Thread Safe Singleton;Multithreading Rules;Critical
+PMD_USDF;Unsynchronized Static Date Formatter;Multithreading Rules;Critical
+PMD_USF;Unsynchronized Static Formatter;Multithreading Rules;Minor
+PMD_UNAION;Use Notify All Instead Of Notify;Multithreading Rules;Critical
+PMD_AES;Add Empty String;Performance Rules;Minor
+PMD_AAL;Avoid Array Loops;Performance Rules;Major
+PMD_ACDC;Avoid Calendar Date Creation;Performance Rules;Minor
+PMD_AFS;Avoid File Stream;Performance Rules;Critical
+PMD_BII;Big Integer Instantiation;Performance Rules;Minor
+PMD_BI;Boolean Instantiation;Performance Rules;Minor
+PMD_CASR;Consecutive Appends Should Reuse;Performance Rules;Minor
+PMD_CLA;Consecutive Literal Appends;Performance Rules;Minor
+PMD_ISB;Inefficient String Buffering;Performance Rules;Minor
+PMD_OTAC;Optimizable To Array Call;Performance Rules;Major
+PMD_RFI;Redundant Field Initializer;Performance Rules;Minor
+PMD_StI;String Instantiation;Performance Rules;Minor
+PMD_STS;String To String;Performance Rules;Minor
+PMD_TFBFASS;Too Few Branches For ASwitch Statement;Performance Rules;Minor
+PMD_UWOC;Unnecessary Wrapper Object Creation;Performance Rules;Major
+PMD_UALIOV;Use Array List Instead Of Vector;Performance Rules;Minor
+PMD_UAAL;Use Arrays As List;Performance Rules;Major
+PMD_UIOSWACFI;Use IOStreams With Apache Commons File Item;Performance Rules;Major
+PMD_USBFSA;Use String Buffer For String Appends;Performance Rules;Major
+PMD_HCCK;Hard Coded Crypto Key;Security Rules;Critical
+PMD_ICI;Insecure Crypto Iv;Security Rules;Critical

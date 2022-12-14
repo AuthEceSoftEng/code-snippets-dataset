@@ -1,0 +1,28 @@
+HCPL;Halstead Calculated Program Length;Complexity metrics 
+HDIF;Halstead Difficulty;Complexity metrics 
+HEFF;Halstead Effort;Complexity metrics 
+HNDB;Halstead Number of Delivered Bugs;Complexity metrics 
+HPL;Halstead Program Length;Complexity metrics 
+HPV;Halstead Program Vocabulary;Complexity metrics 
+HTRP;Halstead Time Required to Program;Complexity metrics 
+HVOL;Halstead Volume;Complexity metrics 
+MIMS;Maintainability Index (Microsoft version);Complexity metrics 
+MI;Maintainability Index (Original version);Complexity metrics 
+MISEI;Maintainability Index (SEI version);Complexity metrics 
+MISM;Maintainability Index (SourceMeter version);Complexity metrics 
+McCC;McCabe’s Cyclomatic Complexity;Complexity metrics 
+NL;Nesting Level;Complexity metrics 
+NLE;Nesting Level Else-If;Complexity metrics 
+NII;Number of Incoming Invocations;Coupling metrics 
+NOI;Number of Outgoing Invocations;Coupling metrics 
+CD;Comment Density;Documentation metrics 
+CLOC;Comment Lines of Code;Documentation metrics 
+DLOC;Documentation Lines of Code;Documentation metrics 
+TCD;Total Comment Density;Documentation metrics 
+TCLOC;Total Comment Lines of Code;Documentation metrics 
+LOC;Lines of Code;Size metrics 
+LLOC;Logical Lines of Code;Size metrics 
+NUMPAR;Number of Parameters;Size metrics 
+NOS;Number of Statements;Size metrics 
+TLOC;Total Lines of Code;Size metrics 
+TLLOC;Total Logical Lines of Code;Size metrics 
