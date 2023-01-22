@@ -107,3 +107,8 @@ venv.bak/
 .project
 .pydevproject
 
+# Node modules
+node_modules
+
+# AST Extractor
+*ASTExtractor*

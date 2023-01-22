@@ -93,6 +93,13 @@ class MetricsAnalyzer(object):
 					return self.read_results(res_path)
 				else:
 					return 0
+		res_path = results_path + os.path.sep + project_name + os.path.sep + "java"
+		res_path += os.path.sep + sorted(os.listdir(res_path))[-1]
+		res_path += os.path.sep + project_name
+		if read_results:
+			return self.read_results(res_path)
+		else:
+			return 0
 		print("Error in SourceMeterJava")
 		print(log)
 		return -1

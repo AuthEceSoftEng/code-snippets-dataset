@@ -13,7 +13,7 @@ ma = MetricsAnalyzer(javaExePath, sourcemeterExePath, tempDirPath)
 
 # Read all metrics and violations
 analysismetrics = []
-with open("libs/metrics.csv") as infile:
+with open("libs/metrics.csv", encoding="cp1252") as infile:
 	for line in infile:
 		analysismetrics.append(line.split(';')[0])
 violations = []
