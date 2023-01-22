@@ -83,7 +83,7 @@ if __name__ == '__main__':
         filepath = os.path.join(resultsPath, "distance_matrix_" + cc + "_" + nn1 + "_" + nn2 + ".joblib")
         if (os.path.exists(filepath)): continue
 
-        print(str(ind + 1) + "/" + str(len(os.listdir(os.path.join(resultsPath, "test")))))
+        print(str(ind + 1) + "/" + str(len(os.listdir(resultsPath))))
         df = pd.read_csv(os.path.join(resultsPath, file))
 
         print(len(df.index))
