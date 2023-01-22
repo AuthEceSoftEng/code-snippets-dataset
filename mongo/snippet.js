@@ -4,7 +4,7 @@ const { Schema, model } = mongoose;
 
 const snippetSchema = new Schema(
 	{
-		url: { type: String, required: true },
+		url: { type: String, required: true, unique: true },
         type: { type: String, required: true, enum: ["train", "test", "valid"] },
         repo: { type: String },
         sha: { type: String },
@@ -14,9 +14,6 @@ const snippetSchema = new Schema(
         docstring: { type: String },
         codeTokens: [{ type: String }],
         docstringTokens: [{ type: String }],
-        analysisMetrics: { type: Object },
-        violations: { type: Object },
-        readabilityMetrics: { type: Object },
         ast: { type: String },
         astCode: { type: String },
 	},

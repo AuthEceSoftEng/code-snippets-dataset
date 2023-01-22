@@ -7,6 +7,9 @@ import mongoose from "mongoose";
 import csv from "csv-parser";
 
 import Snippet from "./snippet.js";
+import AnalysisMetrics from "./analysisMetrics.js";
+import Violations from "./violations.js";
+import ReadabilityMetrics from "./readabilityMetrics.js";
 
 const { MONGODB_URI, RESULTS_PATH, DATASET_PATH, ASTS_PATH } = process.env;
 
@@ -46,23 +49,34 @@ for (const [ind, file] of files.entries()) {
         console.log(`File ${ind + 1} out of ${files.length} - Snippet ${snipInd + 1}/${snippets.length}`);
         const code = codeFile.find((el) => snippet.url === el.url);
         const ast = asts.find((el) => snippet.url === el.url);
-        await Snippet.create({
-            url: snippet.url,
-            type: fileType,
-            repo: code.repo,
-            sha: code.sha,
-            path: code.path,
-            functionName: code.func_name,
-            code: code.code,
-            docstring: code.docstring,
-            codeTokens: code.code_tokens,
-            docstringTokens: code.docstring_tokens,
-            analysisMetrics: Object.fromEntries(analysismetrics.map((m) => ([m, parseFloat(snippet[m])]))),
-            violations: Object.fromEntries(violations.map((v) => ([v, parseFloat(snippet[v])]))),
-            readabilityMetrics: Object.fromEntries(Object.keys(readabilitymetrics).map((r) => ([r, Object.fromEntries(Object.keys(readabilitymetrics[r]).map((el) => ([el, parseFloat(snippet[`${r}_${el}`])])))]))),
-            ast: ast.ast,
-            astCode: ast.ast_code,
-        });
+        try {
+            await Snippet.create({
+                url: snippet.url,
+                type: fileType,
+                repo: code.repo,
+                sha: code.sha,
+                path: code.path,
+                functionName: code.func_name,
+                code: code.code,
+                docstring: code.docstring,
+                codeTokens: code.code_tokens,
+                docstringTokens: code.docstring_tokens,
+                ast: ast.ast,
+                astCode: ast.ast_code,
+            });
+            await AnalysisMetrics.create({
+                url: snippet.url,
+                ...Object.fromEntries(analysismetrics.map((m) => ([m, parseFloat(snippet[m])]))),
+            });
+            await Violations.create({
+                url: snippet.url,
+                ...Object.fromEntries(violations.map((v) => ([v, parseFloat(snippet[v])]))),
+            });
+            await ReadabilityMetrics.create({
+                url: snippet.url,
+                ...Object.fromEntries(Object.keys(readabilitymetrics).map((r) => ([r, Object.fromEntries(Object.keys(readabilitymetrics[r]).map((el) => ([el, parseFloat(snippet[`${r}_${el}`])])))]))),
+            });
+        } catch { /* empty */ }
     }
 }
 
