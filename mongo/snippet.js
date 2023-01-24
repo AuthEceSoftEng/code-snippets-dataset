@@ -16,6 +16,7 @@ const snippetSchema = new Schema(
         docstringTokens: [{ type: String }],
         ast: { type: String },
         astCode: { type: String },
+        clusterID: { type: Number, default: null },
 	},
 	{ timestamps: true, toObject: { versionKey: false } },
 );

@@ -11,7 +11,7 @@ import AnalysisMetrics from "./analysisMetrics.js";
 import Violations from "./violations.js";
 import ReadabilityMetrics from "./readabilityMetrics.js";
 
-const { MONGODB_URI, RESULTS_PATH, DATASET_PATH, ASTS_PATH } = process.env;
+const { MONGODB_URI, RESULTS_PATH, DATASET_PATH, ASTS_PATH, CLUSTERS_PATH } = process.env;
 
 // Connect to db
 const db = await mongoose.connect(MONGODB_URI).catch((error_) => {
@@ -37,6 +37,7 @@ const readCSV = async (filepath, options) => {
 const analysismetrics = (await readCSV("../libs/metrics.csv", { headers: false })).map((m) => m["0"]);
 const violations = (await readCSV("../libs/violations.csv", { headers: false })).map((v) => v["0"]);
 const readabilitymetrics = JSON.parse(fs.readFileSync("../libs/readabilitymetrics.json"));
+const clusters = await readCSV(path.join(CLUSTERS_PATH, "clusters.csv"));
 
 const files = fs.readdirSync(RESULTS_PATH);
 for (const [ind, file] of files.entries()) {
@@ -49,6 +50,7 @@ for (const [ind, file] of files.entries()) {
         console.log(`File ${ind + 1} out of ${files.length} - Snippet ${snipInd + 1}/${snippets.length}`);
         const code = codeFile.find((el) => snippet.url === el.url);
         const ast = asts.find((el) => snippet.url === el.url);
+        const clusterID = clusters?.find((cl) => cl.url === snippet.url)?.cluster;
         try {
             await Snippet.create({
                 url: snippet.url,
@@ -63,6 +65,7 @@ for (const [ind, file] of files.entries()) {
                 docstringTokens: code.docstring_tokens,
                 ast: ast.ast,
                 astCode: ast.ast_code,
+                clusterID: (clusterID && clusterID !== "-") && clusterID,
             });
             await AnalysisMetrics.create({
                 url: snippet.url,
