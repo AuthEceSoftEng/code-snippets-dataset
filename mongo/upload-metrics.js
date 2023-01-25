@@ -37,7 +37,7 @@ const readCSV = async (filepath, options) => {
 const analysismetrics = (await readCSV("../libs/metrics.csv", { headers: false })).map((m) => m["0"]);
 const violations = (await readCSV("../libs/violations.csv", { headers: false })).map((v) => v["0"]);
 const readabilitymetrics = JSON.parse(fs.readFileSync("../libs/readabilitymetrics.json"));
-const clusters = await readCSV(path.join(CLUSTERS_PATH, "clusters.csv"));
+const clusters = await readCSV(path.join(CLUSTERS_PATH, "clusters.csv"), { separator: "," });
 
 const files = fs.readdirSync(RESULTS_PATH);
 for (const [ind, file] of files.entries()) {

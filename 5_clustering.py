@@ -55,13 +55,13 @@ def clustering_analysis(filename, min_clusters = 10, max_clusters = 50000, size_
             max_silhouette_coefficient = average_silh
             optimum_n_clusters = n_clusters
 
-    ax1 = plt.axes()
+    # ax1 = plt.axes()
 
-    ax1.axhline(y=max_silhouette_coefficient, color="red", linestyle="--")
+    # ax1.axhline(y=max_silhouette_coefficient, color="red", linestyle="--")
 
-    plt.plot(x, silhouette_average_scores, 'bo-')
-    plt.xlabel("Number Of Clusters", fontsize=12)
-    plt.ylabel("Average Silhouette Score", fontsize=12)
+    # plt.plot(x, silhouette_average_scores, 'bo-')
+    # plt.xlabel("Number Of Clusters", fontsize=12)
+    # plt.ylabel("Average Silhouette Score", fontsize=12)
 
     # plt.show()
 
@@ -80,6 +80,7 @@ def clustering_analysis(filename, min_clusters = 10, max_clusters = 50000, size_
     return clusters, selected_clusters
 
 if __name__ == '__main__':
+    clustInd = 1
     clustersDF = pd.DataFrame({"url": [], "code": [], "cluster": []})
     joblibFiles = [f for f in os.listdir(resultsPath) if f.endswith(".joblib")]
     for ind, file in enumerate(joblibFiles):
@@ -94,9 +95,11 @@ if __name__ == '__main__':
         df_new["cluster"] = "-"
 
         clusters, selected_clusters = clustering_analysis(file)
+        new_clusters = range(clustInd, clustInd + len(selected_clusters))
+        clustInd += len(selected_clusters)
         for index, row in df_new.iterrows():
             if (clusters[index] in selected_clusters):
-                df_new.loc[index, "cluster"] = clusters[index]
+                df_new.loc[index, "cluster"] = new_clusters[selected_clusters.index(clusters[index])]
         
         clustersDF = pd.concat([clustersDF, df_new], ignore_index=True)
 
