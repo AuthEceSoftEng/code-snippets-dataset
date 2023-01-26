@@ -1,5 +1,5 @@
-# readability-dataset
-Dataset builder for Readability Dataset
+# code-snippets-dataset
+Dataset builder for Code Snippets Dataset
 
 ## Prerequisites
 1. Make sure that you have Java installed (suggested version jdk-11.0.2)
